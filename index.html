@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Entrada y Salida de Alumnos</h1>
+        <div id="reader"></div>
+        <div class="status" id="status">Esperando escaneo...</div>
+        <table id="registroTable">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Hora de Entrada</th>
+                    <th>Hora de Salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán las filas dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

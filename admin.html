@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administración de Alumnos</title>
+    <link rel="stylesheet" href="admin-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Administración de Alumnos</h1>
+
+        <section id="generate-qr">
+            <h2>Generar Código QR para Alumno</h2>
+            <input type="text" id="alumnoID" placeholder="ID del Alumno">
+            <button onclick="generarQRCode()">Generar Código QR</button>
+            <div id="qrcode-container"></div>
+        </section>
+
+        <section id="view-qr">
+            <h2>Ver Códigos QR de Alumnos</h2>
+            <ul id="alumno-list">
+                <!-- Lista de alumnos con códigos QR generados -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="admin-script.js"></script>
+</body>
+</html>
